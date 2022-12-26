@@ -144,6 +144,7 @@
                             nodatafound.style.display="none";
                             search_img.style.display="none"
                         data.forEach(element => { 
+                            maincontent.innerHTML="";
                             let insertdiv=`<div class="content">
                                                             <div class="text">
                                                                 <h4>${element.Thoughts}</h4>
@@ -154,7 +155,7 @@
                                                                 <h2>-<span>${element.username}</span> </h2>
                                                             </div>
                                                         </div> `
-                        maincontent.innerHTML=""
+                       
                         maincontent.insertAdjacentHTML('beforeend', insertdiv);
                         }) 
                             
