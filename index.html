@@ -142,7 +142,8 @@
                     .then(data => {    
                         if (data.length > 1 || data.length == 1){
                             nodatafound.style.display="none";
-                            search_img.style.display="none"
+                            search_img.style.display="none";
+                            maincontent.innerHTML="";
                         data.forEach(element => { 
                             maincontent.innerHTML="";
                             let insertdiv=`<div class="content">
@@ -155,13 +156,12 @@
                                                                 <h2>-<span>${element.username}</span> </h2>
                                                             </div>
                                                         </div> `
-                       
                         maincontent.insertAdjacentHTML('beforeend', insertdiv);
                         }) 
                             
                         } else{
-                            maincontent.innerHTML=""
-                            search_img.style.display="none"
+                            maincontent.innerHTML="";
+                            search_img.style.display="none";
                             nodatafound.style.display="block";
                         }
                         // console.log(data.length)
