@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thidirthoughts Api-Documentation</title>
+    <link rel="icon" type="image/x-icon" href="./img/android-icon-48x48.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./docu.css">
+
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class=""><img src="./img/icon.png" alt=""></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./documentation.html">Documentation</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <article class="document-main" >
+            <h1 class="h1-title">Working with Thidirthoughts api</h1>
+            <div class="get-method">
+                <h1>Get Data</h1>
+                <h4>Get  all the data from an api. </h4>
+                <pre><span>GET</span> <code> https://thidirthoughts.onrender.com/ </code><span class="copy-icon">copy</span></pre>
+                <h1>Pagination Parameters </h1>
+                <h2>Limit </h2>
+                <div>
+                    <h4>By default, we will return pages of 10 data.But you can limit the data per page by using limit parameter.</h4>
+                    <pre><span>GET</span> <code> https://thidirthoughts.onrender.com/?limit=1  </code>  <span class="copy-icon">copy</span> </pre>
+                    <p>The above request will response with an single data as mentioned in the <b>limit=1</b>.</p>
+                </div>
+                <div>
+                    <h2 class="pagetext">Page </h2>
+                    <pre><span>GET</span> <code>https://thidirthoughts.onrender.com/?page=2 </code>  <span  class="copy-icon">copy</span></pre>
+                    <p>The above request will response with an second page of the resulted data as mentioned in the <b>page=2</b>.</p>
+                </div>
+                <h1 class="q-d">Query Data </h1>
+                <div class="q-div">
+                    <p>you can query the api using <b>keyword</b> parameter in the url. <br> By using this keyword parameter you can query the api based on the tags,name, thoughts and language.</p>
+                    <pre><span>GET</span> <code>https://thidirthoughts.onrender.com/?keyword=life</code><span class="copy-icon">copy</span></pre> 
+                    <p>The above request will response with an data which has life keyword in their tags.</p>
+                </div>
+            </div>
+    </article>
+
+        <!-- footer part -->
+        <footer>
+            <div><img src="./img/icon.png" alt=""></div>
+            <div class="links">
+                <a href="./index.html">Home</a>
+                <a href="./documentation.html">Documentation</a>
+            </div>
+            <div class="followus">
+                <h5>Follow us</h5>
+                <div class="follow">
+                <div>
+                    <a href="https://github.com/B-chandru" target="_blank">
+                    <svg width="47" height="50" viewBox="0 0 47 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.4359 41.4369C6.41026 44.7185 6.41026 35.9677 2 34.8739M32.8718 48V39.5337C32.9545 38.4905 32.8125 37.4418 32.4551 36.4573C32.0977 35.4728 31.5331 34.5751 30.799 33.8238C37.7231 33.0581 45 30.4548 45 18.51C44.9994 15.4556 43.8152 12.5184 41.6923 10.3062C42.6975 7.63394 42.6265 4.68023 41.4938 2.05861C41.4938 2.05861 38.8918 1.29293 32.8718 5.29639C27.8177 3.93745 22.49 3.93745 17.4359 5.29639C11.4159 1.29293 8.81385 2.05861 8.81385 2.05861C7.68124 4.68023 7.61016 7.63394 8.61538 10.3062C6.47669 12.5348 5.2912 15.4986 5.30769 18.5756C5.30769 30.4329 12.5846 33.0362 19.5087 33.8894C18.7832 34.6332 18.2237 35.5201 17.8666 36.4926C17.5094 37.4651 17.3627 38.5012 17.4359 39.5337V48" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+               
+                  
+                  
+                <!-- <div>
+                    <a href="#">
+                    <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36.125 4.25H14.875C9.00697 4.25 4.25 9.00697 4.25 14.875V36.125C4.25 41.993 9.00697 46.75 14.875 46.75H36.125C41.993 46.75 46.75 41.993 46.75 36.125V14.875C46.75 9.00697 41.993 4.25 36.125 4.25Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M34 24.1612C34.2622 25.9297 33.9602 27.7359 33.1367 29.3228C32.3133 30.9098 31.0104 32.1967 29.4134 33.0005C27.8165 33.8043 26.0067 34.0841 24.2415 33.8C22.4764 33.516 20.8457 32.6826 19.5815 31.4184C18.3173 30.1542 17.4839 28.5235 17.1999 26.7584C16.9158 24.9932 17.1956 23.1834 17.9994 21.5865C18.8032 19.9895 20.0901 18.6866 21.6771 17.8632C23.264 17.0397 25.0702 16.7377 26.8387 16.9999C28.6427 17.2674 30.3128 18.108 31.6023 19.3976C32.8919 20.6871 33.7325 22.3572 34 24.1612Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M37.1875 13.8125H37.2086" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                </div> -->
+                <div>
+                    <a href="https://www.linkedin.com/in/chandru-Bose" target="_blank" >
+                    <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.3333 15.6667C34.4496 15.6667 37.4383 16.9047 39.6419 19.1082C41.8454 21.3118 43.0833 24.3005 43.0833 27.4167V41.1251H35.25V27.4167C35.25 26.378 34.8374 25.3818 34.1028 24.6472C33.3683 23.9127 32.3721 23.5001 31.3333 23.5001C30.2946 23.5001 29.2984 23.9127 28.5638 24.6472C27.8293 25.3818 27.4167 26.378 27.4167 27.4167V41.1251H19.5833V27.4167C19.5833 24.3005 20.8213 21.3118 23.0248 19.1082C25.2284 16.9047 28.217 15.6667 31.3333 15.6667V15.6667Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.75 17.625H3.91666V41.125H11.75V17.625Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.83332 11.7501C9.99644 11.7501 11.75 9.99653 11.75 7.83341C11.75 5.6703 9.99644 3.91675 7.83332 3.91675C5.67021 3.91675 3.91666 5.6703 3.91666 7.83341C3.91666 9.99653 5.67021 11.7501 7.83332 11.7501Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </footer>
+    
+
+
+    <script src="./js/jquery.js"></script>
+    <script>
+  $(document).ready(function(){
+		$(".copy-icon").click(function(e){
+            e.preventDefault();
+            console.log($(this).closest("pre").find("code").text())
+            let copiedtext = $(this).closest("pre").find("code").text();
+            navigator.clipboard.writeText( copiedtext);
+            $(this).text("copied!")
+    	
+	});
+})
+    </script>
+</body>
+</html>
