@@ -280,6 +280,70 @@ footer .followus .follow svg {
   height: 24px;
 }
 
+.load-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.load-div .circle {
+  background: #41DF6B;
+  margin: 5px;
+  -webkit-animation-name: loader;
+          animation-name: loader;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.load-div .circle:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.load-div .circle:nth-child(2) {
+  background: #2F4674;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.load-div .circle:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.load-div .circle:nth-child(4) {
+  background: #2F4674;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.load-div .circle:nth-child(5) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@-webkit-keyframes loader {
+  from {
+    width: 2px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  to {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+  }
+}
+@keyframes loader {
+  from {
+    width: 2px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  to {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .top-bar img {
     width: 35px;
