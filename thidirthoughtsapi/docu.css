@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  background: #2F4674;
+}
+header .top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+header img {
+  width: 35px;
+}
+header .menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header .menu ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+header .menu ul li a:hover {
+  background: #41DF6B;
+  border-radius: 8px;
+}
+
+.document-main {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: grid;
+  place-content: center;
+  padding-bottom: 10px;
+  margin-top: 100px;
+}
+.document-main .h1-title {
+  font-size: 32px;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+.document-main h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.document-main pre {
+  padding: 20px;
+  border-radius: 8px;
+  background: #233659;
+  color: white;
+  margin-bottom: 8px;
+}
+.document-main .get-method {
+  margin-top: 16px;
+}
+.document-main .get-method h1 {
+  font-weight: 500;
+  margin-bottom: 8px;
+  border-left: 4px solid #06489a;
+  padding: 10px;
+  background: rgba(128, 128, 128, 0.0705882353);
+}
+.document-main .get-method p {
+  margin-top: -14px;
+}
+.document-main .get-method h4 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.document-main .get-method pre {
+  margin-bottom: 24px;
+}
+.document-main .get-method pre span {
+  font-weight: 600;
+  padding-right: 10px;
+}
+.document-main .get-method pre .copy-icon {
+  float: right;
+  background: rgba(2, 4, 53, 0.4705882353);
+  padding: 4px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.document-main .q-d {
+  margin-top: 10px;
+}
+.document-main .q-div {
+  margin-top: 24px;
+}
+.document-main .q-div p {
+  margin-bottom: 14px;
+}
+.document-main .pagetext {
+  margin-top: 14px;
+}
+
+footer {
+  height: 100px;
+  background-color: #2F4674;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+footer img {
+  width: 35px;
+}
+footer .links a {
+  text-decoration: none;
+  color: #9c9c9c;
+  display: block;
+}
+footer .links a:hover {
+  text-decoration: underline;
+  color: #D9D9D9;
+}
+footer .followus h5 {
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+footer .followus .follow {
+  display: flex;
+  gap: 10px;
+}
+footer .followus .follow a {
+  text-decoration: none;
+  padding-top: 7px;
+}
+footer .followus .follow div {
+  background: #41DF6B;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 500ms ease-in-out;
+}
+footer .followus .follow div:hover {
+  transform: scale(0.9);
+}
+footer .followus .follow svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .document-main {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 80px;
+  }
+  .document-main .h1-title {
+    font-size: 24px;
+  }
+  .document-main .get-method h1 {
+    font-size: 20px;
+  }
+  .document-main .get-method h2 {
+    font-size: 18px;
+  }
+  .document-main .get-method pre {
+    padding: 20px 8px;
+  }
+  .document-main .get-method pre span {
+    padding-right: 0px;
+  }
+  .document-main .get-method pre, .document-main .get-method p, .document-main .get-method h4 {
+    font-size: 12px;
+  }
+  .document-main .get-method .copy-icon {
+    font-size: 8px !important;
+  }
+  .document-main .get-method .copy-icon svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+  header {
+    height: 60px;
+  }
+  .top-bar .menu a {
+    font-size: 12px;
+  }
+  .top-bar img {
+    width: 25px;
+  }
+  footer img {
+    width: 25px;
+  }
+  footer .links a {
+    font-size: 14px;
+  }
+  footer .follow div {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  footer .follow div svg {
+    width: 19px !important;
+  }
+}/*# sourceMappingURL=docu.css.map */
