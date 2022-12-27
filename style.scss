@@ -231,7 +231,11 @@ header{
         }
     }
 }
-
+#target{
+    &:target{
+      scroll-margin: 125px;
+    }
+}
 footer{
     position: absolute;
     right: 0;
