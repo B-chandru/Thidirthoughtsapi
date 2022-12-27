@@ -221,6 +221,10 @@ header .content a button:hover {
   color: black;
 }
 
+#target:target {
+  scroll-margin: 125px;
+}
+
 footer {
   position: absolute;
   right: 0;
@@ -417,4 +421,4 @@ footer .followus .follow svg {
   footer .follow div svg {
     width: 19px !important;
   }
-}/*# sourceMappingURL=style.css.map */
+}
